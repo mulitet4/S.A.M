@@ -18,6 +18,8 @@ def open_discord_fnc(server):
             hh_logo = pyautogui.locateOnScreen("icons/hh_logo.png")
             if not hh_logo:
                 hh_logo = pyautogui.locateOnScreen("icons/hh_highlighted_logo.png")
+            elif not hh_logo:
+                hh_logo = pyautogui.locateCenterOnScreen("icons/hh_highlighted_alert_logo.png")
             
             if not hh_logo:
                 continue

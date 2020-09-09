@@ -1,10 +1,7 @@
 import sounddevice as sd
 import soundfile as sf
 import speech_recognition as sr
-import os
 from time import sleep
-
-from scripts_to_run import open_discord
 
 fs = 44100
 dur = 3
@@ -14,24 +11,22 @@ sd.default.channels = 2
 
 r = sr.Recognizer()
 
-for i in range (5, 0, -1):
-    print(f"start speaking in {i} second")
+def recognize():
+    for i in range (5, 0, -1):
+        print(f"start speaking in {i} second")
+        sleep(1)
+
+    speak = sd.rec(int(fs * dur))
+    sd.wait()
+
+    sf.write("speech.wav", speak, fs)
     sleep(1)
 
-speak = sd.rec(int(fs * dur))
-sd.wait()
+    aud = sr.AudioFile("speech.wav")
 
-sf.write("speech.wav", speak, fs)
-sleep(1)
+    with aud as src:
+        #r.adjust_for_ambient_noise(src)
+        audio = r.listen(src)
 
-aud = sr.AudioFile("speech.wav")
-
-with aud as src:
-    #r.adjust_for_ambient_noise(src)
-    audio = r.listen(src)
-
-done = r.recognize_google(audio)
-
-print(f"I think you said: {done}")
-if done == "open discord":
-    open_discord.open_discord_fnc(server="hh")
+    recognized_speech = r.recognize_google(audio)
+    return recognized_speech
