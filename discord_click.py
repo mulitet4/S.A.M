@@ -44,7 +44,24 @@ def open_discord(server):
         time.sleep(0.5)
         pyautogui.write("I am a bot, and this action was performed using a script that mulitate4#9118 wrote in python, ok bye!")
         pyautogui.press("enter")
+
+    elif server == "priyam":
+        while True:
+            time.sleep(1)
+            p_logo = pyautogui.locateOnScreen("icons/priom_logo.png")
+            if not p_logo:
+                p_logo = pyautogui.locateOnScreen("icons/priom_highlighted_logo.png")
+            
+            if not p_logo:
+                continue
+            else:
+                break
     
+        pyautogui.moveTo(p_logo, duration=0.1)
+        pyautogui.click()
+        time.sleep(0.5)
+        pyautogui.write("I am a bot, and this action was performed using a script that mulitate4#9118 wrote in python, ok bye!")
+        pyautogui.press("enter")
 
 
-open_discord(server="sgr")
+open_discord(server="priyam")
