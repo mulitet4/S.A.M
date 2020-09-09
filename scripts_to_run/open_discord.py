@@ -4,13 +4,11 @@ import time
 auto_msg = "I am a bot, and this action was performed using a script that mulitate4#9118 that takes voice input and does actions. So when you say - Open Discord, it opens discord and sends this message :)"
 
 def open_discord_fnc(server):
-    pyautogui.hotkey("win", "d")
-    time.sleep(0.5)
-    discord_logo = pyautogui.locateOnScreen("icons/discord_icon.png")
-    if not discord_logo:
-        discord_logo = pyautogui.locateOnScreen("icons/discord_highlighted_icon.png")
-    pyautogui.moveTo(discord_logo.left + 1, discord_logo.top + 1, duration=0.5)
-    pyautogui.doubleClick()
+    pyautogui.hotkey("win", "s")
+    time.sleep(0.3)
+    pyautogui.write("discord")
+    time.sleep(0.3)
+    pyautogui.press("enter")
 
     if server == "hh":
         while True:
@@ -68,4 +66,4 @@ def open_discord_fnc(server):
         pyautogui.press("enter")
 
 
-#open_discord(server="priyam")
+open_discord_fnc(server="priyam")
