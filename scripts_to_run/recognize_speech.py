@@ -27,6 +27,9 @@ def recognize():
     with aud as src:
         #r.adjust_for_ambient_noise(src)
         audio = r.listen(src)
+    try:
+        recognized_speech = r.recognize_google(audio)
+    except sr.UnknownValueError:
+        return "couldn't recognize what was said, try again"
 
-    recognized_speech = r.recognize_google(audio)
     return recognized_speech
