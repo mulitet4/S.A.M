@@ -4,6 +4,8 @@ import speech_recognition as sr
 import os
 from time import sleep
 
+from scripts_to_run import open_discord
+
 fs = 44100
 dur = 3
 
@@ -30,7 +32,6 @@ with aud as src:
 
 done = r.recognize_google(audio)
 
-try:
-    print(f"I think you said: {done}")
-except:
-    print("Google couldn't understand what you saying bruv")
+print(f"I think you said: {done}")
+if done == "open discord":
+    open_discord.open_discord_fnc(server="hh")
