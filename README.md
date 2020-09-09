@@ -5,7 +5,9 @@ SoundDevice,
 SoundFile, and 
 the truly beautiful PyAutoGUI
 
-The bot sends data to Google to process, otherwise this would have been a near impossible project, atleast for now! My bot basically takes mic input, processes it and does whatever is asked! speech.wav is overwritten everytime the script is run, so meddling with it is not required!
+The bot sends data to Google to process, otherwise this would have been a near impossible project, atleast for now! My bot basically takes mic input, processes it and does whatever is asked! 
+
+speech.wav is overwritten everytime the script is run, but it will also be created automatically if deleted.
 
 Bot name - S.A.M
 salty.ass.machine
