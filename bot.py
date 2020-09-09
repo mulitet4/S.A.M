@@ -16,3 +16,15 @@ if "open" in command.split()[0]:
         app_str += word + " "
     print(f"opening {app_str}\b....")
     small_tasks.search_app(app_str)
+
+if "type" in command.split()[0]:
+    to_write = command.split()[1:]
+    write_str = ""
+    for word in to_write:
+        write_str += word + " "
+    print(f"typing {write_str}in 2 seconds")
+    small_tasks.type_message(write_str)
+
+#todo
+#send email
+#search on browser
