@@ -64,6 +64,3 @@ def open_discord_fnc(server):
         time.sleep(0.5)
         pyautogui.write(auto_msg)
         pyautogui.press("enter")
-
-
-open_discord_fnc(server="priyam")
