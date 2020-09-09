@@ -21,7 +21,7 @@ def open_discord(server):
                 continue
             else:
                 break
-        pyautogui.moveTo(shh_logo, duration=0.1)
+        pyautogui.moveTo(hh_logo, duration=0.1)
         pyautogui.click()
         time.sleep(0.5)
         pyautogui.write("I am a bot, and this action was performed using a script that mulitate4#9118 wrote in python, ok bye!")

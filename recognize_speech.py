@@ -32,5 +32,5 @@ done = r.recognize_google(audio)
 
 try:
     print(f"I think you said: {done}")
-except "UnknownValueError":
+except:
     print("Google couldn't understand what you saying bruv")
