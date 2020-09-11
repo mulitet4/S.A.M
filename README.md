@@ -1,15 +1,25 @@
 # voice_commands_automation
+S.A.M stands for Salty.Assistant.Machine
+
 Automating boring stuff using voice commands, using the -
-Speech_Recognition library, 
-SoundDevice, 
-SoundFile, and 
-the truly beautiful PyAutoGUI
+1. Speech_Recognition library, 
+2. SoundDevice, 
+3. SoundFile, and 
+4. the truly beautiful PyAutoGUI
+
+Features:
+1. Opens whichever program you have - just say "open {program name}"
+2. types whatever you want - say "write {sentence}"
+
+(hasnt been implemented yet)
+3. search your browser - say "search {query}"
+4. send an email - say "mail {}{}"
 
 The bot sends data to Google to process, otherwise this would have been a near impossible project, atleast for now! My bot basically takes mic input, processes it and does whatever is asked! 
 
 speech.wav is overwritten everytime the script is run, but it will also be created automatically if deleted.
 
 Bot name - S.A.M
-salty.ass.machine
+Salty.Assistant.Machine
 
 if you want to use the bot yourself, clone the repository, install the modules listed above, and run bot.py, nothing else.

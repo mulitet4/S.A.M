@@ -25,6 +25,9 @@ if "type" in command.split()[0]:
     print(f"typing {write_str}in 2 seconds")
     small_tasks.type_message(write_str)
 
+if "search" in command.split()[0]:
+    to_search = command.split()[1:]
+
 #todo
 #send email
 #search on browser
