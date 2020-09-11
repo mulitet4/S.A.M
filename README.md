@@ -1,7 +1,7 @@
 # voice_commands_automation
 S.A.M stands for Salty AI Machine!
 
-Automating boring stuff using voice commands, using the -
+Voice Commands Automation, using the -
 Speech_Recognition library, 
 SoundDevice, 
 SoundFile, and 
