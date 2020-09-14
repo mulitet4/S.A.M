@@ -4,16 +4,19 @@ S.A.M stands for Salty.Assistant.Machine
 Automating boring stuff using voice commands, using the -
 1. Speech_Recognition library, 
 2. SoundDevice, 
-3. SoundFile, and 
-4. the truly beautiful PyAutoGUI
+3. SoundFile,
+4. PyAutoGUI
+5. ffmpeg-python
+6. google api
+7. youtube-dl
 
 Features:
 1. Opens whichever program you have - just say "open {program name}"
 2. types whatever you want - say "write {sentence}"
+3. search your browser - say "search {query}"
 
 (hasnt been implemented yet)
-3. search your browser - say "search {query}"
-4. send an email - say "mail {}{}"
+4. download a song - say "download {song}"
 
 The bot sends data to Google to process, otherwise this would have been a near impossible project, atleast for now! My bot basically takes mic input, processes it and does whatever is asked! 
 

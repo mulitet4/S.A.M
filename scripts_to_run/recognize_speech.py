@@ -6,15 +6,17 @@ from time import sleep
 fs = 44100
 dur = 3
 
+time_to_speak = 3
+
 sd.default.samplerate = fs
 sd.default.channels = 2
 
 r = sr.Recognizer()
 
 def recognize():
-    for i in range (5, 0, -1):
-        print(f"start speaking in {i} second")
+    for i in range (time_to_speak, 0, -1):
         sleep(1)
+        print(f"start speaking in {i} second")
 
     speak = sd.rec(int(fs * dur))
     sd.wait()

@@ -1,5 +1,6 @@
 import pyautogui
 from time import sleep
+import webbrowser
 
 def type_message(msg:str):
     sleep(3)
@@ -14,4 +15,7 @@ def search_app(app:str):
     pyautogui.press("enter")
 
 #to-do // search online on browser
+def search_web(query: str):
+    webbrowser.get().open_new_tab(f'https://www.google.com/search?q={query}')
+    
 #to-do // send email
