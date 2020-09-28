@@ -36,5 +36,3 @@ def download_song(query: str):
     song.export("songs/"+item['snippet']['title']+'.mp3', format="mp3")
 
     os.remove(item['id']['videoId']+".webm")
-
-download_song("playdate")
