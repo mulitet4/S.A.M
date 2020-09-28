@@ -7,7 +7,7 @@ Automating boring stuff using voice commands, using the -
 - SoundFile,
 - PyAutoGUI
 
-### **/? IDK ABT THIS**
+#### **/? SONGS DLOAD, REMOVE IF PUBLISHING.**
 - ffmpeg-python
 - google api
 - youtube-dl
@@ -18,7 +18,7 @@ Features:
 - types whatever you want - say "write {sentence}"
 - search your browser - say "search {query}" 
 
-### **DK ABT THIS, REMOVE IF PUBLISHING!**
+__REMOVE THIS IS PUBLISHING__
 - download a song - say "download {song}"
 ```
 
