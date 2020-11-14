@@ -7,18 +7,10 @@
 - SoundFile,
 - PyAutoGUI
 
-#### **/? SONGS DLOAD, REMOVE IF PUBLISHING.**
-- ffmpeg-python
-- google api
-- youtube-dl
-
 ### Features:
 - Opens whichever program you have - just say "open {program name}"
 - types whatever you want - say "write {sentence}"
 - search your browser - say "search {query}" 
-
-__REMOVE THIS IS PUBLISHING__
-- download a song - say "download {song}"
 
 The bot sends data to Google to process, otherwise this would have been a near impossible project, atleast for now! My bot basically takes mic input, processes it and does whatever is asked! 
 
