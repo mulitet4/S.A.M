@@ -1,5 +1,5 @@
-# voice_commands_automation
-## 🤖S.A.M stands for Salty.Assistant.Machine
+# 🤖S.A.M stands for Salty.Assistant.Machine
+A voice command assistant bot named S.A.M. More features to be added in the future
 
 ### Automating boring stuff using voice commands, using the -
 - Speech_Recognition library, 
