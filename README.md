@@ -19,6 +19,7 @@ The bot sends data to Google to process, otherwise this would have been a near i
 Bot name - S.A.M🤖
 🧂Salty.Assistant.Machine🧂
 
+# Installation and Using
 if you want to use the bot yourself, 
 - clone the repository, 
 - install the modules listed above, 
